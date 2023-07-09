@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freelancer portfolio</title>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <nav class="nav">
-      <div class="container">
+      <div class="nav__container">
         <div class="nav-row">
           <a href="./index.html" class="logo"><strong>MY </strong>CV</a>
 
@@ -28,7 +29,7 @@
 
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="#projects" class="nav-list__link nav-list__link--active"
+              <a href="#projects" class="nav-list__link"
                 >Projects</a
               >
             </li>
@@ -56,6 +57,9 @@
           ><br />
           I am a beginner frontend developer
         </h1>
+      </div>
+      <div class="myimage">
+        <img src="./myImage.jpg" alt="" />
       </div>
     </header>
     <main class="section">
@@ -178,7 +182,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container">
         <div class="footer__wrapper">
           <ul class="social">
             <li class="social__item">
@@ -241,7 +245,6 @@
       </div>
     </footer>
 
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
-
