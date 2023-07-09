@@ -246,10 +246,14 @@ th {
   padding: 40px 0;
   min-height: 695px;
 
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  justify-items: center;
 
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "myimage myimage" "header-title header-title";
   background-color: var(--dark-bg);
   background-image: url("./../img/header-bg.png");
   background-repeat: no-repeat;
@@ -260,9 +264,22 @@ th {
   text-align: center;
 }
 
+.myimage {
+  grid-area: myimage;
+}
+
 .header__wrapper {
   padding: 0 15px;
   max-width: 660px;
+  grid-area: header-title;
+}
+
+.myimage {
+  width: 100%;
+}
+.myimage > img {
+  width: 50%;
+  height: 50%;
 }
 
 .header__title {
