@@ -1,0 +1,106 @@
+.favorites {
+	margin-top: 40px;
+	width: 100%;
+	height: 28%;
+}
+
+.favorites-container {
+	width: 100%;
+	height: 100%;
+}
+
+/*  favorites top */
+
+.favorites-title-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+
+.favorites-title {
+	color: #0c0c0e;
+	font-family: Forum;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	width: 160px;
+	height: 40px;
+}
+
+.favorites-line {
+	width: 50px;
+	height: 1px;
+	flex-shrink: 0;
+	margin-top: 20px;
+}
+
+/*  favorites middle */
+
+.favorites-middle {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.favorites-list-items {
+	display: flex;
+	gap: 90px;
+	align-items: center;
+	width: 700px;
+}
+
+input[type='radio'] {
+	accent-color: #000000;
+}
+
+.favorites-list-item {
+	color: #000;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	display: flex;
+}
+
+.favorites-list-item-checked {
+	color: #000;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 20px;
+}
+
+.check-item-text {
+	margin-left: 20px;
+}
+
+.favorites-check-item {
+	width: 17px;
+	height: 17px;
+}
+
+.favorites-subtitle {
+	color: #000;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 20px;
+}
+
+/*  favorites bottom */
+
+.favorites-bottom {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
